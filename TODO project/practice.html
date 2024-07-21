@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practice</title>
+  <style>
+    .btn-subscribe{
+      font-size: 15px;
+      height: 25px;
+      width: 80px;
+      background-color: rgb(252, 50, 50);
+      color: aliceblue;
+      border: none;
+      border-radius: 25px;
+    }
+    .js-size-double{
+      font-size: 30px;
+      height: 50px;
+      width: 160px;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-subscribe">subscribe</button>
+  <script>
+      let buttonElement = document.querySelector('.btn-subscribe');
+      buttonElement.addEventListener ('click', event => setTimeout(doubleTheSize , 2000));
+    function doubleTheSize(){
+      let buttonElement = document.querySelector('.btn-subscribe');
+      buttonElement.classList.add('js-size-double');
+    }
+
+  </script>
+</body>
+</html>
